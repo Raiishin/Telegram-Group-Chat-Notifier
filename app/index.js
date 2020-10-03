@@ -2,7 +2,7 @@ const TelegramBot = require("node-telegram-bot-api");
 const env = require("../config");
 const bot = new TelegramBot(env.bot_token, { polling: true });
 
-bot.on("new_chat_members", (msg) => {
+bot.on("message", (msg) => {
   bot.sendMessage(env.my_telegram_chatId, `Original message JSON : ${JSON.stringify(msg)}`);
 
   if (msg.chat.title === env.telegram_group || env.telegram_group_1) {
