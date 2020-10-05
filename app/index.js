@@ -30,17 +30,17 @@ bot.on("message", (msg) => {
 });
 
 // Simple test messages
-bot.on("message", (msg) => {
-  console.log(msg);
-  const message = msg.text.toLowerCase();
-  bot.sendMessage(msg.chat.id, "Hello! If you want to start using this bot, contact the owner @Gxxin");
+// bot.on("message", (msg) => {
+//   console.log(msg);
+//   const message = msg.text.toLowerCase();
+//   bot.sendMessage(msg.chat.id, "Hello! If you want to start using this bot, contact the owner @Gxxin");
 
-  if (message === "hello") {
-    bot.sendMessage(msg.chat.id, "Hello!");
-  } else if (message === "i love you") {
-    bot.sendMessage(msg.chat.id, "I love you too");
-  }
-});
+//   if (message === "hello") {
+//     bot.sendMessage(msg.chat.id, "Hello!");
+//   } else if (message === "i love you") {
+//     bot.sendMessage(msg.chat.id, "I love you too");
+//   }
+// });
 
 // Get Stock Prices
 bot.on("message", (msg) => {
